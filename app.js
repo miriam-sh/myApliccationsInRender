@@ -13,7 +13,7 @@ dotenv.config()
 
 const port = 3002
 
-app.get('/api/apps', async (req, res) => {
+app.get('/', async (req, res) => {
     try {
         const response = await axios.get('https://api.render.com/v1/services', {
             headers: {
